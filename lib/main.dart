@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ahlul_quran_app/bloc/ayat/ayat_bloc.dart';
 import 'package:flutter_ahlul_quran_app/cubit/ayat/ayat_cubit.dart';
 import 'package:flutter_ahlul_quran_app/cubit/surat/surat_cubit.dart';
 import 'package:flutter_ahlul_quran_app/data/api_service.dart';
@@ -31,8 +32,15 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
               ),
+              // BlocProvider(
+              //   create: (context) => AyatCubit(
+              //     ApiService(
+              //       client: http.Client(),
+              //     ),
+              //   ),
+              // ),
               BlocProvider(
-                create: (context) => AyatCubit(
+                create: (context) => AyatBloc(
                   ApiService(
                     client: http.Client(),
                   ),
