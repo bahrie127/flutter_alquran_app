@@ -15,28 +15,30 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: const Text(
+          'Ahlul Quran',
+          style: TextStyle(
+            color: AppColors.primary,
+            fontSize: 30,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        elevation: 0,
+        backgroundColor: Colors.transparent,
+      ),
       backgroundColor: AppColors.background,
       body: Padding(
         padding: EdgeInsets.symmetric(
           horizontal: 24.sp,
           vertical: 16.sp,
         ),
-        child: Column(
+        child: ListView(
           children: [
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 24),
-              child: SizedBox(
-                height: 36.h,
-                width: 148.w,
-                child: SvgPicture.asset(
-                  'assets/title.svg',
-                  color: AppColors.primary,
-                ),
-              ),
-            ),
             SizedBox(
               height: 156.h,
-              width: size.width - 24.w - 24.w, 
+              width: size.width - 24.w - 24.w,
               child: Stack(
                 children: [
                   Positioned(
