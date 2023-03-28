@@ -48,6 +48,7 @@ class MyApp extends StatelessWidget {
               ),
             ],
             child: MaterialApp(
+              debugShowCheckedModeBanner: false,
               title: 'Ahlul Quran App',
               theme: ThemeData(
                 primarySwatch: Colors.brown,

@@ -4,7 +4,7 @@ Flutter Tutorial for Design layouting and integration data from API purpose for 
 
 # Figma
 
-(Figma Link)(https://www.figma.com/community/file/1101418733985618505) 
+Figma community nya sudah diremove oleh owner dan bersifat ekslusif. jadi tidak saya share.
 
 # Creator
 telegram : 
